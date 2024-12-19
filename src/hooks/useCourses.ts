@@ -8,7 +8,7 @@ export interface ICourse {
 }
 
 const fetchCourses: QueryFunction<ICourse[]> = async () => {
-  const response = await fetch("public/api/courses.json");
+  const response = await fetch("api/courses.json");
 
   if (!response.ok) {
       throw new Error("Netwotk was not ok");
