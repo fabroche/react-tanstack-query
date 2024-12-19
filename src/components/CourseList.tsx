@@ -1,6 +1,7 @@
 import {ICourse} from "../hooks/useCourses.ts";
+import React from "react";
 
-export const CourseList: React.FC<{ courses: ICourse[] }> = ({courses}) => {
+const CourseList: React.FC<{ courses: ICourse[] }> = React.memo(({courses}) => {
     return (
         <ul>
             {
@@ -14,4 +15,6 @@ export const CourseList: React.FC<{ courses: ICourse[] }> = ({courses}) => {
             }
         </ul>
     )
-}
+})
+
+export default CourseList;
