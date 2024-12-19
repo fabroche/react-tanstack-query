@@ -1,1 +1,0 @@
-import{R as s,j as i}from"./index-DgeTWBjz.js";const n=s.memo(({courses:e})=>i.jsx("ul",{children:e.map(t=>i.jsxs("li",{children:[i.jsx("h2",{children:t.title}),i.jsx("p",{children:t.description}),i.jsx("em",{children:t.duration})]},t.id))}));export{n as default};
